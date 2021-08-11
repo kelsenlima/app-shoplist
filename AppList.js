@@ -16,8 +16,10 @@ export default function AppList({ route, navigation }) {
         <StatusBar style="light" />
         <Text style={styles.title}>Lista de Compras</Text>
         <ScrollView 
+           //scrollEnabled={scrollEnabled}
             style={styles.scrollContainer}
-            contentContainerStyle={styles.itemsContainer}>
+            contentContainerStyle={styles.itemsContainer}
+            contentContainerStyle={{padding: 10}}>
             { items.map(item => {
               return <AppItem key={item.id} id={item.id} item={item.quantidade + '  de ' + item.descricao} navigation={navigation} />
             }) }
@@ -29,12 +31,12 @@ export default function AppList({ route, navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#DD4814',
+    backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
   },
   title: {
-    color: '#fff',
+    color: '#DD4814',
     fontSize: 20,
     fontWeight: 'bold',
     marginTop: 50,
@@ -42,7 +44,7 @@ const styles = StyleSheet.create({
   },
   scrollContainer: {
     flex: 1,
-    width: '90%'
+    width: '100%'
   },
   itemsContainer: {
     flex: 1,

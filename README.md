@@ -12,7 +12,7 @@ APP SHOPLIST 'Lista de Compras' é um aprendizado em React Native, utilizando-se
 ## :dizzy: **Roteiro**
 
 ** Checklist **
-Certifique-se de possuir as bibliotecas abaixo, caso contrário execute a instalação com comando abaixo:
+Certifique-se de seguir todos os passos abaixo:
 
 1.	npm install --global expo-cli
 2.	expo init 'nome do projeto'
